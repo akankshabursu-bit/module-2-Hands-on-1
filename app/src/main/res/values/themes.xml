@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Module2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- APP COLORS -->
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryVariant">@color/pink_dark</item>
+        <item name="colorSecondary">@color/red_accent</item>
+
+        <!-- BACKGROUND -->
+        <item name="android:windowBackground">@color/pink_light</item>
+
+        <!-- STATUS BAR -->
+        <item name="android:statusBarColor">@color/pink_dark</item>
+
+        <!-- TEXT COLORS -->
+        <item name="android:textColor">@color/text_black</item>
+
+        <!-- TEXT INPUT -->
+        <item name="colorControlActivated">@color/pink_primary</item>
+        <item name="colorControlHighlight">@color/pink_primary</item>
+
+    </style>
+
+</resources>

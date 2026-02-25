@@ -1,0 +1,57 @@
+[
+  {
+    "fieldId": "full_name",
+    "label": "Full Name",
+    "fieldType": "text",
+    "hint": "Enter your full name",
+    "isRequired": true,
+    "validationRules": {
+      "minLength": 3,
+      "maxLength": 50
+    }
+  },
+  {
+    "fieldId": "email",
+    "label": "Email Address",
+    "fieldType": "email",
+    "hint": "Enter your email",
+    "isRequired": true,
+    "validationRules": {}
+  },
+  {
+    "fieldId": "age",
+    "label": "Age",
+    "fieldType": "number",
+    "hint": "Enter your age",
+    "isRequired": false,
+    "validationRules": {
+      "minValue": 18,
+      "maxValue": 100
+    }
+  },
+  {
+    "fieldId": "country",
+    "label": "Country",
+    "fieldType": "dropdown",
+    "isRequired": true,
+    "options": ["Select country", "USA", "Canada", "UK", "Australia", "India", "Germany"],
+    "defaultValue": "Select country"
+  },
+  {
+    "fieldId": "subscription",
+    "label": "Subscribe to newsletter",
+    "fieldType": "checkbox",
+    "isRequired": false,
+    "defaultValue": "true"
+  },
+  {
+    "fieldId": "phone",
+    "label": "Phone Number",
+    "fieldType": "text",
+    "hint": "Enter phone number",
+    "isRequired": false,
+    "validationRules": {
+      "pattern": "^[0-9]{10}$"
+    }
+  }
+]

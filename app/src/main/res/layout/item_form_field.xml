@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:elevation="2dp">
+
+    <!-- Label Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/labelTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Label"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/requiredIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Text Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter value"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@color/white"
+        app:hintTextColor="@color/text_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Dropdown -->
+    <Spinner
+        android:id="@+id/dropdownSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkbox"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>
